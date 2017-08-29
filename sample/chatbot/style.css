@@ -1,0 +1,13 @@
+body {
+  margin:20px;
+}
+.todo-default {
+  padding: 5px;
+  border-bottom: 1px solid silver;
+}
+.todo-doing {
+  background-color: floralwhite;
+}
+.back-color {
+  background-color: MintCream;
+}

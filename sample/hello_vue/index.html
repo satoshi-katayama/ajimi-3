@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <title>Hello Vue</title>
+  <meta name="description" content="Hello Vue">
+  <script src="https://vuejs.org/js/vue.min.js"></script>
+</head>
+
+<body>
+  <div id="app">
+    {{ message }}
+  </div>
+
+  <div id="app-2">
+    <p v-if="seen">Now you see me</p>
+  </div>
+
+  <div id="app-3">
+    <ol>
+      <li v-for="f in fruits">
+        {{ f.text }}
+      </li>
+    </ol>
+  </div>
+
+  <div id="app-4">
+    <input v-model="message">
+    <p>{{ message }}</p>
+  </div>
+
+  <div id="example-1">
+    <button v-on:click="counter += 1">Add 1</button>
+    <p>button above has been clicked {{ counter }} times.</p>
+  </div>
+
+  <div id="example-2">
+    <!-- `countUp` は、あらかじめ定義したメソッドの名前 -->
+    <button v-on:click="countUp">Add 3</button>
+    <p>The button above has been clicked {{ counter }} times.</p>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>

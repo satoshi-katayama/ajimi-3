@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <title>Chat With A3RT TalkAPI</title>
+  <meta name="description" content="Chat With A3RT TalkAPI">
+  <script src="https://vuejs.org/js/vue.min.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <div id="chatApp">
+    <h2 v-bind:style="fontStyle">{{ title }}</h2>
+    <input type="text" v-model="talk">
+    <button type="button" v-on:click="talkSubmit">送信</button>
+    <ul>
+      <li v-for="t in talks" :key="t.id" v-bind:class="['todo-default', t.isBackColor ? 'back-color' : '']" >
+        {{t.text}}
+      </li>
+    </ul>
+  </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

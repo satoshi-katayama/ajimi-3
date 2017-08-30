@@ -6,7 +6,7 @@ TalkAPIというリクルートが無料提供しているAPIを使います。<
 [A3RT（アート）](https://a3rt.recruit-tech.co.jp/)
 
 ## 1.事前準備
-- このプロジェクトを自分のリポジトリにフォークする
+- このプロジェクトをローカルにクローンする
 - curl (インストールしてない場合)
 - npm (インストールしてない場合) ※おまけの「vue-cli」で使います
 
@@ -35,6 +35,7 @@ curl -X POST https://api.a3rt.recruit-tech.co.jp/talk/v1/smalltalk \
 ```
 
 
+
 ## 3.Vue.jsを触ってみる
 ### [Vue.js 公式サイト](https://jp.vuejs.org/index.html)<br >
 
@@ -44,6 +45,7 @@ curl -X POST https://api.a3rt.recruit-tech.co.jp/talk/v1/smalltalk \
  2. vue-cli
  3. npmモジュールの利用（webpack, browserify等)
 
+今回は1の「scriptタグの埋め込み」の方法で進めます。
 
 ## ※以下、公式サイトから一部抜粋
 

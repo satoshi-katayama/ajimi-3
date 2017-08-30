@@ -17,7 +17,7 @@ var app = new Vue({
         isBackColor: false
       })
       let params = new URLSearchParams();
-      params.append('apikey', 'bBQkAJZ6iIv901baORmqmSV4PYL10PFZ');
+      params.append('apikey', 'xxxxxxxxxxxxxxxxxxxxxxx');
       params.append('query',this.talk );
       axios.post('https://api.a3rt.recruit-tech.co.jp/talk/v1/smalltalk', params)
       .then(response => {

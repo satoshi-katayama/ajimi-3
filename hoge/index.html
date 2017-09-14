@@ -9,6 +9,7 @@
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">
   <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="secret.js"></script>
 </head>
 
 <body>
@@ -22,6 +23,7 @@
         :key="t.id"
         v-bind:class="['todo-default', t.isBackColor ? 'back-color' : '']"
         >
+        <div class="trim"><img v-bind:src="t.icon"></div>
         {{t.text}}
       </li>
     </ul>

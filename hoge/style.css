@@ -1,0 +1,32 @@
+body {
+  margin:20px;
+}
+.todo-default {
+  padding: 5px;
+  border-bottom: 1px solid silver;
+}
+.todo-doing {
+  background-color: floralwhite;
+}
+.back-color {
+  background-color: MintCream;
+}
+
+.trim {
+  display: inline-block;
+  overflow: hidden;
+  width: 100px;
+  height: 100px;
+  position: relative;
+}
+
+.trim img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: auto;
+  height: 100%;
+}

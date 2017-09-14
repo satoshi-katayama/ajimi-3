@@ -1,5 +1,9 @@
-# ajimi #3 Vue.js + A3RT TalkAPI
+# 作った
+``hoge/secret.sample.js``をコピーして``hoge/secret.js``を作成。<br>
+APIキーを[https://a3rt.recruit-tech.co.jp/](https://a3rt.recruit-tech.co.jp/)から取得して``hoge/secret.js``に入力。<br>
+``hoge/index.html``をブラウザで開く
 
+# ajimi #3 Vue.js + A3RT TalkAPI
 Vue.jsを使ったBotとチャットするアプリケーションを作成
 
 TalkAPIというリクルートが無料提供しているAPIを使います。<br >

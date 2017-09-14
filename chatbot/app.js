@@ -9,6 +9,28 @@ var app = new Vue({
     talks: []
   },
   methods: {
-
+    talkSubmit: function() {
+      this.talks.push({
+        id: this.talks.length,
+        text: "you: "+this.talk,
+        isBackColor: false
+      })
+      let params = new URLSearchParams();
+    params.append('apikey', 'xxxxxxxxxxxxxxxxxxxxxxx');
+    params.append('query',this.talk );
+    axios.post('https://api.a3rt.recruit-tech.co.jp/talk/v1/smalltalk', params)
+    .then(response => {
+      this.talks.push({
+        id: this.talks.length,
+        text: "bot: "+response.data.results[0].reply,
+        doing: true,
+      isBackColor: true
+      })
+      console.log(response.data);
+    }).catch(error => {
+      console.log(error);
+    });
+      this.talk = ""
+    },
   }
 })
